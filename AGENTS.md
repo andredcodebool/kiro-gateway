@@ -52,10 +52,10 @@ This is a **reverse engineering project** for Kiro API (Amazon Q Developer). We 
    - Tests are both documentation and a safety net - they should clearly show what the code does and prevent regressions
    - Check `tests/README.md` to find the appropriate test module for your changes
 
-## Personal Notes (Fork)
+## Personal Notes (fork-specific)
 
-> These are notes I've added for my own reference while learning the codebase.
+> These notes are specific to my personal fork and are not part of the upstream project.
 
-- I'm primarily using this fork to understand how the authentication flow works with Amazon Q Developer
-- When in doubt, read the middleware stack top-to-bottom before making any changes
-- Useful entry point for tracing a request: start at the proxy handler and follow the transformer chain
+- I'm using this primarily to learn how reverse-engineered API proxies work in Python
+- When in doubt, prefer readability over cleverness — this is a learning repo for me
+- Keep the upstream `main` branch clean; do personal experiments on feature branches
