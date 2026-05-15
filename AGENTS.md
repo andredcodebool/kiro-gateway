@@ -52,10 +52,10 @@ This is a **reverse engineering project** for Kiro API (Amazon Q Developer). We 
    - Tests are both documentation and a safety net - they should clearly show what the code does and prevent regressions
    - Check `tests/README.md` to find the appropriate test module for your changes
 
-## Personal Notes (fork-specific)
+## Personal Notes (Fork)
 
-> These notes are specific to my personal fork and may not apply upstream.
+> These notes are specific to my personal fork and may not apply to the upstream project.
 
-- I primarily use this with Claude via the OpenAI-compatible endpoint — most of my testing focuses on that path
-- If something seems broken, check auth token expiry first; that accounts for ~80% of issues I've hit
-- Keeping `ENABLE_EXTENDED_THINKING=false` by default in my `.env` since I mostly work with shorter contexts
+- I'm using this primarily for local experimentation with Claude via the Kiro API
+- When in doubt, prefer readability over cleverness — I'm here to learn, not to ship production code
+- Run `pytest -v` before committing anything, even small changes
