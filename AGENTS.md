@@ -54,8 +54,8 @@ This is a **reverse engineering project** for Kiro API (Amazon Q Developer). We 
 
 ## Personal Notes (fork-specific)
 
-> These notes are specific to my personal fork and are not part of the upstream project.
+> These notes are specific to my personal fork and may not apply upstream.
 
-- I'm using this primarily to learn how reverse-engineered API proxies work in Python
-- When in doubt, prefer readability over cleverness — this is a learning repo for me
-- Keep the upstream `main` branch clean; do personal experiments on feature branches
+- I primarily use this with Claude via the OpenAI-compatible endpoint — most of my testing focuses on that path
+- If something seems broken, check auth token expiry first; that accounts for ~80% of issues I've hit
+- Keeping `ENABLE_EXTENDED_THINKING=false` by default in my `.env` since I mostly work with shorter contexts
