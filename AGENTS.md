@@ -52,9 +52,9 @@ This is a **reverse engineering project** for Kiro API (Amazon Q Developer). We 
    - Tests are both documentation and a safety net - they should clearly show what the code does and prevent regressions
    - Check `tests/README.md` to find the appropriate test module for your changes
 
-## Personal Notes (fork-specific)
+## Personal Notes (Fork)
 
-> These notes are specific to my personal fork and may not apply upstream.
+> These notes are specific to my personal fork and may not apply to the upstream project.
 
-- I'm primarily using this with Claude via the OpenAI-compatible endpoint, so most of my testing focuses on that path
-- If something seems broken with streaming responses, check the SSE parsing logic first — that's where I've hit the most issues personally
+- I'm using this primarily to learn how the Kiro API works under the hood; don't be surprised if experimental branches get messy
+- When in doubt, prefer readability over cleverness — this is a learning environment, not production
